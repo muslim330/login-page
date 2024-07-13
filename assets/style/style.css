@@ -1,0 +1,129 @@
+*{
+margin: 0px;
+padding: 0px;
+}
+
+@font-face {
+    font-family:'quicksand';
+    src: url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"');
+}
+body{
+    display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+.primary{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+.shine .background-img{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    opacity: 0.5;
+}
+.contain{
+margin: auto;
+background-color: black;
+position: absolute;
+display:block;
+justify-content: center;
+align-items: center;
+top: 25%;
+left: 25%;
+right: 25%;
+border-radius: 10px;
+width: 370px;
+transition: 0.7s ease;
+opacity: 0.92;
+}
+.form{
+    text-align: center;
+}
+.form img{
+    width:40px ;
+    margin: 15px;
+    margin-top: 25px;
+}
+.form input{
+   text-align: center;
+   border-top: none;
+   border-right: none;
+   border-left: none;
+   border-bottom: 1px solid rgb(26, 24, 24);
+   width: 330px;
+   background-color: black;
+   margin-bottom: 15px;
+   padding:10px;
+   color: rgb(255, 255, 255);
+   outline: none;
+   transition: 0.5s ease;
+}
+.form input::placeholder{
+    color: rgb(185, 175, 175);
+}
+.form .sign{
+    color:black;
+    background-color: white;
+    width: 125px;
+margin: auto;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 0px;
+    font-family: 'quicksand';
+    font-weight:bold;
+}
+
+.form p{
+    color:rgb(196, 188, 188);
+    font-size: small;
+    letter-spacing: 0.5px;
+    margin: 10px;
+    font-family: 'quicksand';
+    font: weight 300px;;
+}
+.form p a{
+    color: rgb(196, 188, 188);
+    font-size: small;
+    letter-spacing: 0.5px;
+}
+.form h6{
+    color:white;
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    border-top: 1px solid rgb(170, 166, 166);
+    width: 340px;margin:auto;
+    padding:5px;
+    padding-top: 15px;
+    margin: 10px;
+    font-family: 'quicksand';
+    font: weight 500px;;
+}
+.form h6 a{
+    color: white;
+    font-size: small;
+    letter-spacing: 0.5px;
+
+}
+.form input:hover{
+    background-color: rgb(19, 18, 18);
+    border-radius: 10px;
+}
+.contain:hover{
+    opacity: 0.97;
+    transition: 0.5s ease;
+}
+.form .sign:hover{
+    opacity: 0.90;
+    border-radius: 40px;
+}
+
