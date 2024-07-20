@@ -12,9 +12,8 @@
   <section class="contain">
     <form class="form" id="form_id">
       <img src="/assets/img/nwee.png" alt="">
-      <input type="text" placeholder="E-mail adress" id="e-mail" name="e-mail" class="myinput" required pattern=".{8,}.*@gmail.com" title="must contain more
-        than 8 charecters and @gmail.com" >
-      <input type="password" placeholder="password" id="password" name="password" class="myinput" required pattern=".{8,16}" title="please inter more than 8 charecters">
+      <input type="email" placeholder="E-mail adress" id="e-mail" name="e-mail" class="myinput" required>
+      <input type="password" placeholder="password" id="password" name="password" class="myinput" required minlength="8">
       <div class="sign">
         <button  class="sign_button" type="submit">sign in</button></div>
       <p><br>can't remember your password? <a href="">Recover it</a></p>
