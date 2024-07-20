@@ -10,25 +10,29 @@
     <img src="/assets/img/kark.jpg" class="background-img">
     </div>
   <section class="contain">
-    <form class="form">
+    <form class="form" id="form_id">
       <img src="/assets/img/nwee.png" alt="">
-      <input type="text" placeholder="E-mail adress" id="e-mail">
-      <input type="password" placeholder="password" id="password">
+      <input type="text" placeholder="E-mail adress" id="e-mail" name="e-mail" class="myinput">
+      <input type="password" placeholder="password" id="password" name="password" class="myinput">
       <div class="sign">
-        <button href="" class="sign" onclick="display()">sign in</button></div>
+        <button  class="sign" type="submit">sign in</button></div>
       <p><br>can't remember your password? <a href="">Recover it</a></p>
       <h6>Don't have an Account? <a href="">create it now</a></h6>
     </form>
   </section>
 </div>
-  <!--  javascript code-->
   <script>
-    function display() {
-      const email = document.getElementById("e-mail").value;
-      const pass = document.getElementById("password").value;
-      console.log("email is " + email + "password is " + pass)
-    }
-  </script>
+    document.getElementById("form_id").addEventListener("submit", (event) => {
+      event.preventDefault()
+      console.log(event);
+
+      const formData = new FormData(event.target)
+
+      const { ...values } = Object.fromEntries(formData)
+
+      console.log(values);
+    })
+  </script> 
 </body>
 
 </html>
