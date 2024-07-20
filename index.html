@@ -2,37 +2,26 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="/assets/style/style.css">
+  <link rel="stylesheet" href="/login-page/assets/style/style.css">
 </head>
 <body>
   <div class="primary">
     <div class="shine">
-    <img src="/assets/img/kark.jpg" class="background-img">
+    <img src="/login-page/assets/img/kark.jpg" class="background-img">
     </div>
   <section class="contain">
     <form class="form" id="form_id">
       <img src="/assets/img/nwee.png" alt="">
-      <input type="text" placeholder="E-mail adress" id="e-mail" name="e-mail" class="myinput">
-      <input type="password" placeholder="password" id="password" name="password" class="myinput">
+      <input type="text" placeholder="E-mail adress" id="e-mail" name="e-mail" class="myinput" required pattern=".{8,}.*@gmail.com" title="must contain more
+        than 8 charecters and @gmail.com" >
+      <input type="password" placeholder="password" id="password" name="password" class="myinput" required pattern=".{8,16}" title="please inter more than 8 charecters">
       <div class="sign">
-        <button  class="sign" type="submit">sign in</button></div>
+        <button  class="sign_button" type="submit">sign in</button></div>
       <p><br>can't remember your password? <a href="">Recover it</a></p>
       <h6>Don't have an Account? <a href="">create it now</a></h6>
     </form>
   </section>
 </div>
-  <script>
-    document.getElementById("form_id").addEventListener("submit", (event) => {
-      event.preventDefault()
-      console.log(event);
-
-      const formData = new FormData(event.target)
-
-      const { ...values } = Object.fromEntries(formData)
-
-      console.log(values);
-    })
-  </script> 
 </body>
 
 </html>

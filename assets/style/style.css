@@ -64,7 +64,7 @@ opacity: 0.92;
 .form input::placeholder{
     color: rgb(185, 175, 175);
 }
-.form .sign{
+.form .sign_button{
     color:black;
     background-color: white;
     width: 125px;
@@ -73,10 +73,14 @@ margin: auto;
     border-radius: 20px;
     font-size: 22px;
     font-weight: bold;
+    height: 45px;
     text-decoration: none;
     border: 0px;
     font-family: 'quicksand';
     font-weight:bold;
+}
+.sign{
+    margin-top: 15px;
 }
 
 .form p{
@@ -126,4 +130,3 @@ margin: auto;
     opacity: 0.90;
     border-radius: 40px;
 }
-
